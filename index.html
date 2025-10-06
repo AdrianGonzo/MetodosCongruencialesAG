@@ -2,33 +2,27 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Generador Congruencial Lineal</title>
-  <link rel="stylesheet" href="index.css">
+  <title>Menú Principal</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h2>Generadores de Números Aleatorios</h2>
+  <h1>Menú Principal</h1>
 
-  <div class="contenedor">
-    
-    <div class="caja">
-      <h3>Método Congruencial Lineal</h3>
-      <label>Semilla (X₀): </label><input type="number" id="semillaLineal" value="7"><br>
-      <label>k: </label><input type="number" id="kLineal" value="3"><br>
-      <label>Cantidad de números (P): </label><input type="number" id="pLineal" value="10"><br>
-      <label>Decimales: <input type="number" id="decLineal" value="4"></label><button onclick="generarLineal()">Generar</button>
-      <div id="resultadoLineal"></div>
-    </div>
-    <div class="caja">
-      <h3>Método Congruencial Multiplicativo</h3>
-      <label>Semilla (X₀): </label><input type="number" id="semillaMult" value="5"><br>
-      <label>k: </label><input type="number" id="kMult" value="7"><br>
-      <label>Cantidad de números (P): </label><input type="number" id="pMult" value="10"><br>
-      <label>Método para (a): 3 + 8k <input type="radio" name="opcionMult" value="1" checked>   5 + 8k <input type="radio" name="opcionMult" value="2"> </label><br>
-      <label>Decimales: <input type="number" id="decMult" value="4"></label><button onclick="generarMultiplicativo()">Generar</button>
-      <div id="resultadoMultiplicativo"></div>
-    </div>
+  <div class="menu">
+    <button onclick="irA('aleatorio.html')">Generadores de Números Aleatorios</button>
+    <button onclick="irA('depositoFijo.html')">Deposito Pago Fijo</button>
+    <button onclick="irA('maximizacion.html')">Maximización</button>
+    <button onclick="irA('dados.html')">Dados</button>
+    <button onclick="alert('Opción 5 aún no disponible')">Opción 5</button>
+    <button onclick="alert('Opción 6 aún no disponible')">Opción 6</button>
+    <button onclick="alert('Opción 7 aún no disponible')">Opción 7</button>
   </div>
 
-  <script src="index.js"></script>
+  <script>
+    // Navegar a otra página
+    function irA(pagina) {
+      window.location.href = pagina;
+    }
+  </script>
 </body>
 </html>

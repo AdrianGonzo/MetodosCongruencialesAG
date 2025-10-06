@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Generador Congruencial Lineal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Generadores de Números Aleatorios</h2>
+  <button class="volver" onclick="window.location.href='index.html'">⬅ Volver al menú</button>
+
+  <div class="contenedor">
+    
+    <div class="caja">
+      <h3>Método Congruencial Lineal</h3>
+      <label>Semilla (X₀): </label><input type="number" id="semillaLineal" value="7"><br>
+      <label>k: </label><input type="number" id="kLineal" value="3"><br>
+      <label>Cantidad de números (P): </label><input type="number" id="pLineal" value="10"><br>
+      <label>Decimales: <input type="number" id="decLineal" value="4"></label><button onclick="generarLineal()">Generar</button>
+      <div id="resultadoLineal"></div>
+    </div>
+    <div class="caja">
+      <h3>Método Congruencial Multiplicativo</h3>
+      <label>Semilla (X₀): </label><input type="number" id="semillaMult" value="5"><br>
+      <label>k: </label><input type="number" id="kMult" value="7"><br>
+      <label>Cantidad de números (P): </label><input type="number" id="pMult" value="10"><br>
+      <label>Método para (a): 3 + 8k <input type="radio" name="opcionMult" value="1" checked>   5 + 8k <input type="radio" name="opcionMult" value="2"> </label><br>
+      <label>Decimales: <input type="number" id="decMult" value="4"></label><button onclick="generarMultiplicativo()">Generar</button>
+      <div id="resultadoMultiplicativo"></div>
+    </div>
+  </div>
+
+  <script src="aleatorio.js"></script>
+</body>
+</html>

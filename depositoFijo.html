@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Deposito de plan fijo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Problema del Deposito de plan fijo</h2>
+  <button class="volver" onclick="window.location.href='index.html'">⬅ Volver al menú</button>
+
+  <div class="contenedor">
+    
+    <div class="caja">
+      <h3>Método Congruencial Lineal</h3>
+      <label>Tiempo (años): </label><input type="number" id="tiempo" value="10"><br>
+      <label>Capital a depositar (Bs.): </label><input type="number" id="dineroDepositado" value="1000"><br>
+      <label>Interes Constante <input type="radio" name="opcionInteres" value="1" checked>    Interes Variable <input type="radio" name="opcionInteres" value="2"></label><br>
+      <label>Decimales: <input type="number" id="dec" value="4"></label><button onclick="calcularCapital()">Generar</button>
+      <div id="resultadoDep"></div>
+    </div>
+  </div>
+  <script src="depositoFijo.js"></script>
+</body>
+</html>
