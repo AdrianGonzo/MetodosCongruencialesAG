@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Simulación de Ventas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Simulación de Ventas Diarias</h2>
+  <button class="volver" onclick="window.location.href='index.html'">⬅ Volver al menú</button>
+
+  <div class="contenedor">
+    <div class="caja">
+      <h3>Modelo de Ventas</h3>
+      <p>
+        Cada día se simula un número aleatorio de clientes.  
+        Cada cliente puede comprar 0 a 3 artículos, con diferentes probabilidades.
+      </p>
+
+      <label>Días simulados (nH): </label>
+      <input type="number" id="nH" value="10"><br>
+
+      <label>Costo por artículo (cv): </label>
+      <input type="number" id="cv" value="50" step="0.01"><br>
+
+      <label>Precio de venta unitario (pvu): </label>
+      <input type="number" id="pvu" value="75" step="0.01"><br>
+
+      <label>Costo fijo diario (cfd): </label>
+      <input type="number" id="cfd" value="300" step="0.01"><br>
+
+      <label>Decimales a mostrar:</label>
+      <input type="number" id="dec" value="2"><br>
+
+      <button onclick="simularVentas()">Simular</button>
+
+      <div id="resultadoVentas"></div>
+    </div>
+  </div>
+
+  <script src="ventaArticulos.js"></script>
+</body>
+</html>
