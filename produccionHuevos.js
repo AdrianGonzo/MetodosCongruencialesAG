@@ -1,12 +1,12 @@
 function simularProduccion() {
     const nD = parseInt(document.getElementById("nD").value);
-    const puP = parseFloat(document.getElementById("puP").value);
-    const puH = parseFloat(document.getElementById("puH").value);
     let dec = parseInt(document.getElementById("dec").value);
   
     if (!Number.isInteger(dec) || isNaN(dec)) dec = 2;
     dec = Math.min(Math.max(dec, 0), 10);
   
+    let puP = 5.00;
+    let puH = 1.50;
     let c = 0;
     let HP = 0;
     let THR = 0; // Huevos Rotos

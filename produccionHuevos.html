@@ -21,12 +21,6 @@
       <label>Días simulados (nD): </label>
       <input type="number" id="nD" value="30"><br>
 
-      <label>Precio por Pollo (puP): </label>
-      <input type="number" id="puP" value="5" step="0.01"><br>
-
-      <label>Precio por Huevo (puH): </label>
-      <input type="number" id="puH" value="1.5" step="0.01"><br>
-
       <label>Decimales a mostrar:</label>
       <input type="number" id="dec" value="2"><br>
 
@@ -37,5 +31,9 @@
   </div>
 
   <script src="produccionHuevos.js"></script>
+  <script src="validaciones.js"></script>
+<script>
+  evitarNegativos();
+</script>
 </body>
 </html>

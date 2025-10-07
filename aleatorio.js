@@ -73,6 +73,10 @@ function generarMultiplicativo(){
   let g = Math.round((Math.log(p)/Math.log(2))+2);
   let m = Math.pow(2, g);
 
+  if (X0 % 2 == 0){
+    X0 = X0 + 1;
+  }
+
   if (g - 1){
     g = 1;
   }
@@ -92,6 +96,7 @@ function generarMultiplicativo(){
       <li>g = ${g}</li>
       <li>m = ${m}</li>
       <li>a = ${a}</li>
+      <li>X0 = ${X0}</li>
     </ul>
   `;
 

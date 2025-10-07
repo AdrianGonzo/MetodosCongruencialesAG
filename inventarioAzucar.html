@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Simulación de Inventario</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Simulación de Control de Inventario</h2>
+  <button class="volver" onclick="window.location.href='index.html'">⬅ Volver al menú</button>
+
+  <div class="contenedor">
+    <div class="caja">
+      <h3>Parámetros del Modelo</h3>
+
+      <label>Número máximo de días (nmd): </label>
+      <input type="number" id="nmd" value="30"><br>
+
+      <label>Capacidad de bodega (cbod): </label>
+      <input type="number" id="cbod" value="700"><br>
+
+      <label>Decimales a mostrar:</label>
+      <input type="number" id="dec" value="2"><br>
+
+      <button onclick="simularInventario()">Simular</button>
+
+      <div id="resultadoInv"></div>
+    </div>
+  </div>
+
+  <script src="inventarioAzucar.js"></script>
+  <script src="validaciones.js"></script>
+<script>
+  evitarNegativos();
+</script>
+</body>
+</html>

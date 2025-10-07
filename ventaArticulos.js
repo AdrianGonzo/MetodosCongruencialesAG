@@ -1,10 +1,10 @@
 function simularVentas() {
     const nH = parseInt(document.getElementById("nH").value);
-    const cv = parseFloat(document.getElementById("cv").value);
-    const pvu = parseFloat(document.getElementById("pvu").value);
-    const cfd = parseFloat(document.getElementById("cfd").value);
     const dec = parseInt(document.getElementById("dec").value);
   
+    let cv = 50.00;
+    let pvu = 75.00;
+    let cfd = 300.00;
     let c = 0;
     let TArt = 0;
     let gN = 0;

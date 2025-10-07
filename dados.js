@@ -1,9 +1,9 @@
 function simularDados() {
   const nJ = parseInt(document.getElementById("nJ").value);
-  const iu = parseFloat(document.getElementById("iu").value);
-  const cu = parseFloat(document.getElementById("cu").value);
   const dec = parseInt(document.getElementById("dec").value);
 
+  let iu = 2.00;
+  let cu = 5.00;
   let c = 0;
   let gN = 0.0;
   let nJG = 0;
